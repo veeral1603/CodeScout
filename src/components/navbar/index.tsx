@@ -6,7 +6,7 @@ import MobileMenu from "./mobile-menu";
 
 export default function Navbar() {
   return (
-    <header className="border-b border-border">
+    <header className="border-b border-border bg-background">
       <div className="container-6xl flex items-center justify-between py-3">
         {/* Logo  */}
         <Logo isLink={true} />
