@@ -29,7 +29,7 @@ export default function ContributeSection() {
   return (
     <section
       aria-labelledby="contribute-heading"
-      className="border-t border-border py-14 sm:py-16 lg:py-20"
+      className=" py-14 sm:py-16 lg:py-20"
     >
       <div className="container-6xl">
         <div className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
