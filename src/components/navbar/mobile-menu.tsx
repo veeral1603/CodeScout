@@ -9,6 +9,7 @@ import {
   AltArrowRightIcon,
   SquareTopDownIcon,
   CloseIcon,
+  HamburgerMenuIcon,
 } from "@solar-icons/react/linear";
 import {
   Sheet,
@@ -35,20 +36,9 @@ export default function MobileMenu() {
       {/* No asChild — SheetTrigger renders the button itself */}
       <SheetTrigger
         aria-label="Open navigation menu"
-        className="flex size-11 items-center justify-center rounded-lg border border-border bg-background text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="flex size-9 items-center justify-center rounded-sm border border-border bg-background text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
-        <svg
-          aria-hidden="true"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-        >
-          <path d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+        <HamburgerMenuIcon size={24} strokeWidth={2} />
       </SheetTrigger>
 
       <SheetContent
