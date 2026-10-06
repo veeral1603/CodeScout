@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { GithubIcon } from "@/components/icons";
 import { GITHUB_REPO_URL } from "@/config/constants";
@@ -10,11 +9,16 @@ export default function ContributeBtn() {
       href={GITHUB_REPO_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="py-2 px-2 md:px-3 hover:bg-muted rounded-sm transition-colors duration-200 flex items-center gap-2 text-sm font-medium "
+      className="flex items-center w-max gap-2 rounded-sm px-2 py-2 text-sm font-medium transition-colors duration-200 hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring md:px-3"
     >
-      <GithubIcon size={18} />
-      <p>Contribute</p>
-      <SquareTopDownIcon size={12} className="text-muted-foreground" />
+      <GithubIcon size={18} aria-hidden="true" />
+      <span>Contribute</span>
+      <SquareTopDownIcon
+        size={12}
+        aria-hidden="true"
+        className="text-muted-foreground"
+      />
+      <span className="sr-only">(opens GitHub in a new tab)</span>
     </Link>
   );
 }

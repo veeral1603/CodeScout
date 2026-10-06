@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../logo";
 import ContributeBtn from "./contribute-btn";
 import Navlinks from "./navlinks";
@@ -6,17 +5,15 @@ import MobileMenu from "./mobile-menu";
 
 export default function Navbar() {
   return (
-    <header className="border-b border-border bg-background">
+    <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/70">
       <div className="container-6xl flex items-center justify-between py-3">
-        {/* Logo  */}
         <Logo isLink={true} />
 
-        <div className="hidden items-center gap-7 md:flex">
+        <nav aria-label="Main" className="hidden items-center gap-7 md:flex">
           <Navlinks />
           <ContributeBtn />
-        </div>
+        </nav>
 
-        {/* Mobile navigation */}
         <div className="md:hidden">
           <MobileMenu />
         </div>
