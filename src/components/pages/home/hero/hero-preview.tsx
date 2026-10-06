@@ -38,7 +38,7 @@ export default function HeroPreview() {
   }
 
   return (
-    <div className="mx-auto max-w-5xl  pb-20 sm:pb-24">
+    <div className="mx-auto max-w-5xl px-4 pb-10 sm:pb-12">
       <div className="relative">
         <div className="absolute -inset-8 -z-10 rounded-4xl bg-primary/4 blur-3xl" />
 

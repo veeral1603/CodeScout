@@ -7,7 +7,7 @@ export default function CompaniesSection() {
   return (
     <section
       aria-labelledby="companies-heading"
-      className=" py-20 sm:py-24 lg:py-28"
+      className="py-14 sm:py-16 lg:py-20"
     >
       <div className="container-6xl">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
@@ -31,7 +31,7 @@ export default function CompaniesSection() {
           </Link>
         </div>
 
-        <div className="mt-10 sm:mt-12">
+        <div className="mt-8 sm:mt-10">
           <CompanyGrid />
         </div>
       </div>

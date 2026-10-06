@@ -1,4 +1,5 @@
 import CompaniesSection from "@/components/pages/home/companies/companies-section";
+import ContributeSection from "@/components/pages/home/contribue/contribute-section";
 import HeroSection from "@/components/pages/home/hero/hero-section";
 import TopicsSection from "@/components/pages/home/topics/topics-section";
 
@@ -8,6 +9,7 @@ export default function HomePage() {
       <HeroSection />
       <CompaniesSection />
       <TopicsSection />
+      <ContributeSection />
     </div>
   );
 }
