@@ -1,21 +1,26 @@
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 interface CompanyLogoProps {
   name: string;
+  className?: string;
 }
 
-export default function CompanyLogo({ name }: CompanyLogoProps) {
+export default function CompanyLogo({ name, className }: CompanyLogoProps) {
   const src = `/company-logos/${name.toLowerCase()}.webp`;
   return (
-    <div className="relative flex size-12 shrink-0 items-center justify-center rounded-xl border border-border bg-white shadow-sm ring-1 ring-inset ring-foreground/4 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:border-primary/20 group-hover:shadow-md">
+    <div
+      className={cn(
+        className,
+        "size-12 shrink-0 overflow-hidden rounded-sm border-2 border-border bg-white",
+      )}
+    >
       <Image
         src={src}
         alt=""
-        aria-hidden="true"
-        width={32}
-        height={32}
-        className="size-8 object-contain transition-transform duration-300 group-hover:scale-110"
-        unoptimized
+        width={48}
+        height={48}
+        className="size-full object-cover"
       />
     </div>
   );

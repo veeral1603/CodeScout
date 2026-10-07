@@ -1,25 +1,18 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Lora, IBM_Plex_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const jakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta",
+const geist = Geist({
+  variable: "--font-geist",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
 });
 
-const lora = Lora({
-  variable: "--font-lora",
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
 });
 
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-plex-mono",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 export const metadata: Metadata = {
   title: "LeetCode Company Wise",
   description:
@@ -36,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       className={cn(
-        `${jakarta.variable} ${lora.variable} ${plexMono.variable} h-full antialiased `,
+        `${geist.variable} ${geistMono.variable} h-full antialiased `,
         "dark",
       )}
     >

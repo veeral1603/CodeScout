@@ -28,10 +28,5 @@ export interface CompanyMeta {
   topTopics?: string[];
 }
 
-export interface Company {
-  companyMeta: CompanyMeta;
-  timeframes: Record<Timeframe, Question[]>;
-}
-
 export type SortKey = "name" | "count" | "easy" | "medium" | "hard";
 export type SortDir = "asc" | "desc";
