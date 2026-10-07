@@ -2,15 +2,16 @@ import Link from "next/link";
 import { AltArrowRightIcon } from "@solar-icons/react/linear";
 import SectionHeading from "@/components/section-heading";
 import CompanyGrid from "./company-grid";
+import "./companies.css";
 
 export default function CompaniesSection() {
   return (
     <section
       aria-labelledby="companies-heading"
-      className="py-14 sm:py-16 lg:py-20"
+      className="relative py-14 sm:py-16 lg:py-20"
     >
       <div className="container-6xl">
-        <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
+        <div className="companies-rise flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading
             id="companies-heading"
             title="Practice by company."

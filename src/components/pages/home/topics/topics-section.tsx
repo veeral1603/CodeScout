@@ -7,7 +7,7 @@ export default function TopicsSection() {
   return (
     <section
       aria-labelledby="topics-heading"
-      className=" py-14 sm:py-16 lg:py-20"
+      className="py-14 sm:py-16 lg:py-20"
     >
       <div className="container-6xl">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
