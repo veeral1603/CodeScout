@@ -49,6 +49,7 @@ export const metadata: Metadata = {
       "Explore company-wise coding interview problems and prepare smarter.",
   },
 };
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
