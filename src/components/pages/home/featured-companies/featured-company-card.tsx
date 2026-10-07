@@ -10,7 +10,7 @@ interface CompanyCardProps {
   className?: string;
 }
 
-export default function CompanyCard({
+export default function FeaturedCompanyCard({
   name,
   slug,
   problemCount,

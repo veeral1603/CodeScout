@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { AltArrowRightIcon } from "@solar-icons/react/linear";
 import SectionHeading from "@/components/section-heading";
-import CompanyGrid from "./company-grid";
+import FeaturedCompanyGrid from "./featured-compan-grid";
 import "./companies.css";
 
-export default function CompaniesSection() {
+export default function FeaturedCompaniesSection() {
   return (
     <section
       aria-labelledby="companies-heading"
@@ -33,7 +33,7 @@ export default function CompaniesSection() {
         </div>
 
         <div className="mt-8 sm:mt-10">
-          <CompanyGrid />
+          <FeaturedCompanyGrid />
         </div>
       </div>
     </section>
