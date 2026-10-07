@@ -14,16 +14,41 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LeetCode Company Wise",
+  title: {
+    default: "CodeScout - Company-Wise Coding Interview Problems",
+    template: "%s | CodeScout",
+  },
   description:
-    "Browse LeetCode questions sorted by company and frequency. Open-source, no login required.",
+    "Explore company-wise coding interview problems and prepare for the companies you want to work for.",
+  applicationName: "CodeScout",
+  generator: "Next.js",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+    "coding interview questions",
+    "company wise coding questions",
+    "technical interview questions",
+    "DSA interview questions",
+    "Company-wise dsa questions",
+    "coding interview preparation",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: "LeetCode Company Wise",
-    description: "Browse LeetCode questions by company and frequency.",
     type: "website",
+    siteName: "CodeScout",
+    title: "CodeScout — Company-Wise Coding Interview Problems",
+    description:
+      "Explore company-wise coding interview problems and prepare for the companies you want to work for.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CodeScout — Company-Wise Coding Interview Problems",
+    description:
+      "Explore company-wise coding interview problems and prepare smarter.",
   },
 };
-
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
